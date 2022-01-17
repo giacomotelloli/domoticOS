@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<variabili  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../variables.xsd"> 
+	
+		<variabile nome="km_percorsi"  valoreMin="0" valoreMax="900000">
+      <unitaMisura>km</unitaMisura>
+    </variabile>
+		
+		<variabile nome="carica_batteria" valoreMax="100" valoreMin="0">
+		   <unitaMisura>%</unitaMisura>
+		 </variabile>
+		 
+		<variabile nome="pressione_gommaAS"  valoreMax="3" valoreMin="0">
+		    <unitaMisura>bar</unitaMisura>
+		</variabile>
+		
+<variabile nome="pressione_gommaAD"  valoreMax="3" valoreMin="0">
+		    <unitaMisura>bar</unitaMisura>
+		</variabile>
+
+		<variabile nome="pressione_gommaPS"  valoreMax="3" valoreMin="0">
+		    <unitaMisura>bar</unitaMisura>
+		</variabile>
+		
+<variabile nome="pressione_gommaPD"  valoreMax="3" valoreMin="0">
+		    <unitaMisura>bar</unitaMisura>
+		</variabile>
+		
+		<variabile nome="livello_serbatoio" valoreMax="100" valoreMin="0">
+		   <unitaMisura>%</unitaMisura>
+		</variabile>
+				
+
+    	<variabile nome="stato_blocco">
+      <valoreStato>aperta</valoreStato>
+      <valoreStato>chiusa</valoreStato>
+		</variabile>
+				
+				
+    	<variabile nome="stato_accensione">
+      <valoreStato>accesa</valoreStato>
+      <valoreStato>spenta</valoreStato>
+		</variabile>
+				
+<variabile nome="stato_tracking">
+      <valoreStato>attivo</valoreStato>
+      <valoreStato>disattivato</valoreStato>
+		</variabile>
+				
+      
+    	<variabile nome="latitudine" valoreMax="90" valoreMin="-90">
+  <unitaMisura>DD</unitaMisura>
+		</variabile>
+		
+		<variabile nome="longitudine" valoreMax="180" valoreMin="-180">
+    <unitaMisura>DD</unitaMisura>
+		</variabile>
+				
+				
+
+</variabili>

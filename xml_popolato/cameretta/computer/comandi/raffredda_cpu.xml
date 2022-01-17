@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../grammatica.xsd">
+<listaVariabili>
+  <variabile>temperatura_cpu</variabile>
+  <variabile>ram_occupata</variabile>
+</listaVariabili>
+<cicloPre>
+  <condizione>
+    <condizione>
+            <termine1>temperatura_cpu</termine1>
+            <operatore>>=</operatore>
+            <termine2>40</termine2>
+        </condizione>
+        <operatore>and</operatore>
+        <condizione>
+          <termine1>ram_occupata</termine1>
+          <operatore>>=</operatore>
+          <termine2>50</termine2>
+        </condizione>
+  </condizione>
+  <bloccoIstruzioni>
+          <chiamaFunzione nome="stampaMessaggio">
+      <parametro>Tutto ok</parametro>
+      </chiamaFunzione>
+
+      <chiamaFunzione nome="assegna">
+      <parametro>temperatura_cpu</parametro>
+      <parametro>25</parametro>
+      </chiamaFunzione>
+      
+      <chiamaFunzione nome="assegna">
+      <parametro>ram_occupata</parametro>
+      <parametro>25</parametro>
+      </chiamaFunzione>
+      
+  </bloccoIstruzioni>
+</cicloPre>
+
+
+
+
+</codice>

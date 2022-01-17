@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="codice" >
+		  <xsd:complexType>
+		  <xsd:sequence>
+                <xsd:element ref="listaVariabili" minOccurs="1" maxOccurs="1" />
+              <xsd:sequence minOccurs="0" maxOccurs="unbounded" >
+                <xsd:element ref="cicloPost" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="cicloPre" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="se" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="chiamaFunzione" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+		  </xsd:sequence>
+		  </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="listaVariabili">
+      <xsd:complexType>
+        <xsd:sequence>
+        <xsd:element ref="variabile" maxOccurs="unbounded" minOccurs="0" />
+        </xsd:sequence>
+      </xsd:complexType>
+  </xsd:element>
+
+<xsd:element name="variabile" type="xsd:string"></xsd:element>
+
+	<xsd:element  name="chiamaFunzione">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="parametro" minOccurs="0" maxOccurs="unbounded" ></xsd:element>
+			</xsd:sequence>
+      <xsd:attribute name="nome" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element> 
+
+	<xsd:element  name="se">
+		<xsd:complexType>
+			<xsd:sequence>
+			  <xsd:element ref="condizione"></xsd:element>
+				<xsd:element ref="vera" ></xsd:element>
+				<xsd:element ref="altrimenti" ></xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element> 
+
+
+	<xsd:element  name="seCiclo">
+		<xsd:complexType>
+			<xsd:sequence>
+			
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element> 
+
+	<xsd:element  name="condizione">
+		<xsd:complexType>
+      <xsd:sequence>
+            <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+            <xsd:element ref="termine1" minOccurs="0" maxOccurs="1"></xsd:element>
+            <xsd:element ref="operatore" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            <xsd:element ref="termine2" minOccurs="0" maxOccurs="1"></xsd:element>
+            <xsd:element ref="condizione" minOccurs="0" maxOccurs="unbounded" ></xsd:element>
+          </xsd:sequence>
+      </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element> 
+
+	<xsd:element  name="vera">
+		<xsd:complexType>
+      <xsd:sequence>
+          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+          <xsd:element ref="se" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+          <xsd:element ref="chiamaFunzione" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+          <xsd:element ref="cicloPre" maxOccurs="unbounded" minOccurs="0" ></xsd:element>
+          <xsd:element ref="cicloPost" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element> 
+
+	<xsd:element  name="altrimenti">
+		<xsd:complexType>
+      <xsd:sequence>
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+          <xsd:element ref="se" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+          <xsd:element ref="chiamaFunzione" minOccurs="0" maxOccurs="unbounded" ></xsd:element>
+          <xsd:element ref="cicloPre" maxOccurs="unbounded" minOccurs="0" ></xsd:element>
+          <xsd:element ref="cicloPost" maxOccurs="unbounded" minOccurs="0" ></xsd:element>
+        </xsd:sequence>
+      </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element> 
+
+<xsd:element  name="cicloPre">
+		<xsd:complexType>
+			<xsd:sequence>
+			    <xsd:element ref="condizione" minOccurs="1"></xsd:element>
+				<xsd:element ref="bloccoIstruzioni"></xsd:element>
+				</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element> 
+
+
+<xsd:element  name="cicloPost">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="bloccoIstruzioni"></xsd:element>
+			    <xsd:element ref="condizione" minOccurs="1"></xsd:element>
+				</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element> 
+
+<xsd:element  name="bloccoIstruzioni">
+		<xsd:complexType>
+      <xsd:sequence>
+            <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+          <xsd:element ref="se" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+          <xsd:element ref="chiamaFunzione" minOccurs="0" maxOccurs="unbounded" ></xsd:element>
+          <xsd:element ref="cicloPre" maxOccurs="unbounded" minOccurs="0" ></xsd:element>
+          <xsd:element ref="cicloPost" maxOccurs="unbounded" minOccurs="0" ></xsd:element>
+        </xsd:sequence>
+      </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element> 
+	
+  <xsd:element name="termine1" type="xsd:string"></xsd:element>
+	<xsd:element name="parametro" type="xsd:string"></xsd:element>
+	<xsd:element name="termine2" type="xsd:string"></xsd:element>
+	<xsd:element name="operatore" type="xsd:string"></xsd:element>
+</xsd:schema>

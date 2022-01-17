@@ -1,0 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<codice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../grammatica.xsd">
+<listaVariabili>
+  <variabile>temperatura_macchinetta</variabile>
+</listaVariabili>
+
+        <chiamaFunzione nome="assegna">
+            <parametro>temperatura_macchinetta</parametro>
+            <parametro>temperatura_macchinetta-5</parametro>
+        </chiamaFunzione>
+       
+</codice>

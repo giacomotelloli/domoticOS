@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variabili xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../variables.xsd">
+<variabile nome="stato_accensione"><valoreStato>acceso</valoreStato><valoreStato>spento</valoreStato></variabile>
+<variabile nome="temperatura_cpu" valoreMax="50" valoreMin="0"><unitaMisura>gradi</unitaMisura></variabile>
+<variabile nome="ram_occupata" valoreMax="100" valoreMin="0"><unitaMisura>%</unitaMisura></variabile>
+<variabile nome="disco_occupato" valoreMax="100" valoreMin="0"><unitaMisura>%</unitaMisura></variabile>
+<variabile nome="sistema_operativo"><valoreStato>Arch Linux</valoreStato><valoreStato>Ubuntu</valoreStato><valoreStato>Mandriva</valoreStato><valoreStato>Windows 98</valoreStato></variabile>
+<variabile nome="antivirus">
+<valoreStato>Kaspersky</valoreStato>
+<valoreStato>AVG</valoreStato>
+</variabile>
+</variabili>

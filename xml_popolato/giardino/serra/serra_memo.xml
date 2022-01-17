@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lista_memo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../memo.xsd">
+	<memo idUtente="3"  tempoAttivazione="10-07-2020-15-32-00"><comando>attiva_irrigazione_totale</comando></memo>
+	<memo idUtente="2" tempoAttivazione="11-07-2020-16-33-00"><comando>disattiva_irrigazione_totale</comando></memo>
+</lista_memo>

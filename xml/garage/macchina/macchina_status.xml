@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<stati xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../status.xsd"> 
+	<stato timestamp="19-06-2020-15-06-51">
+		<varOsservata nome="km_percorsi"><valore>17200</valore></varOsservata>
+		<varOsservata nome="carica_batteria"><valore>95</valore> </varOsservata>
+		<varOsservata nome="pressione_gommaAS"><valore>3</valore> </varOsservata>
+    <varOsservata nome="pressione_gommaAD"><valore>3</valore> </varOsservata>
+    <varOsservata nome="pressione_gommaPS"><valore>3</valore> </varOsservata>
+    <varOsservata nome="pressione_gommaPD"><valore>3</valore> </varOsservata>
+    <varOsservata nome="livello_serbatoio"><valore>50</valore> </varOsservata>
+    <varOsservata nome="stato_blocco"><valore>chiusa</valore></varOsservata>
+    <varOsservata nome="stato_accensione"><valore>accesa</valore></varOsservata>
+    <varOsservata nome="stato_tracking"><valore>attivo</valore></varOsservata>
+	  <varOsservata  nome="latitudine"><valore>41.405981</valore></varOsservata>
+	  <varOsservata  nome="longitudine"><valore>13.047585</valore></varOsservata>
+	  
+	</stato>
+
+<stato timestamp="19-06-2020-19-06-51">
+		<varOsservata nome="km_percorsi"><valore>30300</valore></varOsservata>
+		<varOsservata nome="carica_batteria"><valore>80</valore></varOsservata>
+		<varOsservata nome="pressione_gommaAS"><valore>3</valore></varOsservata>
+    <varOsservata nome="pressione_gommaAD"><valore>3</valore></varOsservata>
+    <varOsservata nome="pressione_gommaPS"><valore>3</valore></varOsservata>
+    <varOsservata nome="pressione_gommaPD"><valore>1.56</valore></varOsservata>
+    <varOsservata nome="livello_serbatoio"><valore>10</valore></varOsservata>
+    <varOsservata nome="stato_blocco"><valore>aperta</valore></varOsservata>
+    <varOsservata nome="stato_accensione"><valore>spenta</valore></varOsservata>
+    <varOsservata nome="stato_tracking"><valore>disattivato</valore></varOsservata>
+</stato>
+
+</stati>
+

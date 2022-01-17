@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	  <xsd:element name="stati">
+		  <xsd:complexType>
+		  <xsd:sequence>
+            <xsd:element ref="stato" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+		  </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="stato" >
+		<xsd:complexType>
+          <xsd:sequence>
+          <xsd:element ref="varOsservata" minOccurs="1"   maxOccurs="unbounded"></xsd:element>
+          </xsd:sequence>
+
+          <xsd:attribute name="timestamp" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element >
+
+	  <xsd:element  name="varOsservata">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element ref="valore" />
+        </xsd:sequence>
+       <xsd:attribute name="nome" type="xsd:string" use="required"/>
+		    </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="valore" type="xsd:string"></xsd:element>
+</xsd:schema>

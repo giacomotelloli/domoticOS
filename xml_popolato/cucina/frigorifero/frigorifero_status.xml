@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<stati xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../status.xsd"> 
+	
+	<stato timestamp="19-06-2020-15-06-51">
+		<varOsservata nome="temperatura_frigo"><valore>20</valore></varOsservata>
+		<varOsservata nome="temperatura_freezer"><valore>-10</valore></varOsservata>
+		<varOsservata nome="presenza_ghiaccio"><valore>si</valore></varOsservata>
+    <varOsservata nome="capienza_frigo"><valore>73</valore></varOsservata>
+    <varOsservata nome="quantita_triglie"><valore>3</valore></varOsservata>
+    <varOsservata nome="quantita_trote"><valore>3</valore></varOsservata>
+    <varOsservata nome="quantita_carote"><valore>3</valore></varOsservata>
+    <varOsservata nome="quantita_mele"><valore>50</valore></varOsservata>
+    <varOsservata nome="quantita_prociutto_cotto"><valore>6</valore></varOsservata>
+    <varOsservata nome="quantita_formaggio_di_capra"><valore>8</valore></varOsservata>
+	</stato>
+
+<stato timestamp="19-06-2020-19-06-51">
+		<varOsservata nome="temperatura_frigo"><valore>21</valore></varOsservata>
+		<varOsservata nome="temperatura_freezer"><valore>-14</valore> </varOsservata>
+		<varOsservata nome="presenza_ghiaccio"><valore>no</valore></varOsservata>
+    <varOsservata nome="capienza_frigo"><valore>75</valore></varOsservata>
+    <varOsservata nome="quantita_triglie"><valore>5</valore></varOsservata>
+    <varOsservata nome="quantita_trote"><valore>3</valore></varOsservata>
+    <varOsservata nome="quantita_carote"><valore>3</valore></varOsservata>
+    <varOsservata nome="quantita_mele"><valore>50</valore></varOsservata>
+    <varOsservata nome="quantita_prociutto_cotto"><valore>6</valore></varOsservata>
+    <varOsservata nome="quantita_formaggio_di_capra"><valore>8</valore></varOsservata>
+</stato>
+</stati>
+

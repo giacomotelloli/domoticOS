@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<variabili  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../variables.xsd"> 
+	
+		
+		<variabile nome="umidita_ambiente" valoreMax="100" valoreMin="0">
+		   <unitaMisura>%</unitaMisura>
+		</variabile>
+
+  <variabile nome="stato_irrigazione" valoreMax="100" valoreMin="0">
+		   <valoreStato>accesa</valoreStato>
+		   <valoreStato>spenta</valoreStato>
+		</variabile>
+				
+		
+<variabile nome="media_umidita_pomodori" valoreMax="100" valoreMin="0">
+		   <unitaMisura>g/m^3</unitaMisura>
+		</variabile>
+						
+<variabile nome="media_umidita_broccoletti" valoreMax="100" valoreMin="0">
+		   <unitaMisura>g/m^3</unitaMisura>
+		</variabile>
+				
+				<variabile nome="media_umidita_patate" valoreMax="100" valoreMin="0">
+		   <unitaMisura>g/m^3</unitaMisura>
+		</variabile>
+				
+<variabile nome="media_umidita_cavoli" valoreMax="100" valoreMin="0">
+		   <unitaMisura>g/m^3</unitaMisura>
+  </variabile>
+				
+    
+
+</variabili>

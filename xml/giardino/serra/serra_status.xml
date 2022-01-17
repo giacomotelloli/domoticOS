@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<stati xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../status.xsd"> 
+	<stato timestamp="19-06-2020-15-06-51">
+		<varOsservata nome="umidita_ambiente"><valore>30</valore></varOsservata>
+		<varOsservata nome="accensione_irrigazione"><valore>accesa</valore></varOsservata>
+		<varOsservata nome="media_umidita_pomodori"><valore>50</valore></varOsservata>
+		<varOsservata nome="media_umidita_patate"><valore>20</valore></varOsservata>
+    <varOsservata nome="mediaumidita_cavoli"><valore>30</valore></varOsservata>
+	</stato>
+<stato timestamp="19-06-2020-19-06-51">
+		<varOsservata nome="umidita_ambiente"><valore>30</valore></varOsservata>
+		<varOsservata nome="accensione_irrigazione"><valore>accesa</valore></varOsservata>
+		<varOsservata nome="media_umidita_pomodori"><valore>50</valore></varOsservata>
+		<varOsservata nome="media_umidita_patate"><valore>20</valore></varOsservata>
+    <varOsservata nome="media_umidita_cavoli"><valore>30</valore></varOsservata>
+    <varOsservata nome="media_umidita_broccoletti"><valore>12</valore></varOsservata>
+	</stato>
+</stati>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<variabili  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../variables.xsd"> 
+	
+		<variabile nome="temperatura_frigo"  valoreMin="-16" valoreMax="25">
+      <unitaMisura>gradi</unitaMisura>
+    </variabile>
+		
+		<variabile nome="temperatura_freezer" valoreMax="6" valoreMin="-20">
+		   <unitaMisura>gradi</unitaMisura>
+		 </variabile>
+		 
+		<variabile nome="presenza_ghiaccio" >
+		   <valoreStato>si</valoreStato>
+		   <valoreStato>no</valoreStato>
+		</variabile>
+		
+		<variabile nome="capienza_frigo" valoreMax="100" valoreMin="0" >
+		  <unitaMisura>kg</unitaMisura>
+		</variabile>
+				
+    	<variabile nome="quantita_triglie"  valoreMax="100" valoreMin="0">
+<unitaMisura>kg</unitaMisura>
+		</variabile>
+
+
+    	<variabile nome="quantita_trote"  valoreMax="100" valoreMin="0">
+    	<unitaMisura>kg</unitaMisura>
+		</variabile>
+		
+    	<variabile nome="quantita_carote" valoreMax="100" valoreMin="0">
+    	<unitaMisura>kg</unitaMisura>
+		</variabile>
+
+	
+    	<variabile nome="quantita_mele" valoreMax="100" valoreMin="0">
+    	<unitaMisura>kg</unitaMisura>
+		</variabile>
+		
+		
+    	<variabile nome="quantita_prociutto_cotto" valoreMax="100" valoreMin="0">
+    	<unitaMisura>kg</unitaMisura>
+		</variabile>
+
+    	<variabile nome="quantita_formaggio_di_capra" valoreMax="100" valoreMin="0">
+    	<unitaMisura>kg</unitaMisura>
+		</variabile>
+
+
+</variabili>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<variabili  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../variables.xsd"> 
+	
+		
+		<variabile nome="livello_acqua" valoreMax="50" valoreMin="0">
+		   <unitaMisura>cl</unitaMisura>
+		</variabile>
+				
+  <variabile nome="stato_cialda">
+      <valoreStato>inserita</valoreStato>
+      <valoreStato>non inserita</valoreStato>
+		</variabile>
+				
+    <variabile nome="temperatura_macchinetta" valoreMax="40" valoreMin="0">
+      <unitaMisura>gradi</unitaMisura>
+    </variabile>
+    	<variabile nome="stato_accensione">
+      <valoreStato>accesa</valoreStato>
+      <valoreStato>spenta</valoreStato>
+		</variabile>
+				
+<variabile nome="stato_erogazione">
+      <valoreStato>in corso</valoreStato>
+      <valoreStato>finita</valoreStato>
+		</variabile>
+				
+				
+
+</variabili>

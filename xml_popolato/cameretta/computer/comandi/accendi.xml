@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../grammatica.xsd">
+<listaVariabili>
+  <variabile>stato_accensione</variabile>
+</listaVariabili>
+<se>
+  <condizione>
+            <termine1>stato_accensione</termine1>
+            <operatore>=</operatore>
+            <termine2>spento</termine2>
+  </condizione>
+  <vera>
+        <chiamaFunzione nome="stampaMessaggio">
+            <parametro>lo devo accendere</parametro>
+        </chiamaFunzione>
+        <chiamaFunzione nome="assegna">
+          <parametro>stato_accensione</parametro>
+          <parametro>acceso</parametro>
+        </chiamaFunzione>
+  </vera>
+  <altrimenti>
+        <chiamaFunzione nome="stampaMessaggio">
+          <parametro>è già acceso</parametro>
+        </chiamaFunzione>
+  </altrimenti>
+</se>
+</codice>

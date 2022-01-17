@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comandi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../commands.xsd">
+    <comando>
+        <livelloPermesso>3</livelloPermesso>
+        <verboComando>accendi</verboComando>
+        <codiceComando>comandi/accendi.xml</codiceComando>
+    </comando>
+
+    <comando>
+        <livelloPermesso>2</livelloPermesso>
+        <verboComando>raffredda_cpu</verboComando>
+        <codiceComando>comandi/raffredda_cpu.xml</codiceComando>
+    </comando>
+</comandi>

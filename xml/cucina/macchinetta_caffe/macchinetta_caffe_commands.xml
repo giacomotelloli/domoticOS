@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comandi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../commands.xsd"><comando><livelloPermesso>2</livelloPermesso><verboComando>abbassaTemperatura</verboComando><codiceComando>comandi/abbassaTemperatura.xml</codiceComando></comando><comando><livelloPermesso>2</livelloPermesso><verboComando>alzaTemperatura</verboComando><codiceComando>comandi/alzaTemperatura.xml</codiceComando></comando></comandi>

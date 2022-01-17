@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="lista_memo">
+		 <xsd:complexType>
+      <xsd:sequence>
+       <xsd:element ref="memo" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="memo">
+	<xsd:complexType>
+    <xsd:sequence>
+    <xsd:element ref="comando"/>
+    </xsd:sequence>
+	  <xsd:attribute name="tempoAttivazione" type="xsd:string" use="required"/>
+	  <xsd:attribute name="idUtente" type="xsd:int" use="required"/>
+  </xsd:complexType>
+	</xsd:element>
+	
+<xsd:element name="comando" type="xsd:string"></xsd:element>
+	
+</xsd:schema>
