@@ -1,0 +1,19 @@
+--------------------------------------------------
+-  Definizione della grammatica di H.A.L. 9001   -
+--------------------------------------------------
+
+H.A.L. : Home Assistant Language
+
+La sintassi compresa dall'interfaccia H.A.L. è definita in BNF:
+
+<comando>::= <verbo-transitivo><oggetto>in<luogo> | <verbo-transitivo><oggetto>in<luogo>alle<tempo>
+
+<verbo-transitivo>::= {x app VERBI}  (VERBI=insieme di tutti i verbi)
+
+<oggetto>::= {x app OGG} (OGG=insieme degli oggetti della casa) 
+
+<luogo>::= {x app LUOGHI} (LUOGHI=insieme dei luoghi della casa) | eps (stringa vuota)
+
+<tempo>::= {x app TEMP} (TEMP=insieme delle date)
+
+ 

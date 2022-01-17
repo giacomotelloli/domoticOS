@@ -1,0 +1,19 @@
+-------------------------------------
+-    SCHEMA DATABASE H.A.L. 9001    -
+-------------------------------------
+
+
+OGGETTI(id INT,id_luogo INT,nomeOggetto VARCHAR(20),stato VARCHAR(20)); pk(id)
+
+LUOGHI(id_piano INT,id AUTOINCREMENT,nomeLuogo VARCHAR(20)); pk(nomeLuogo)
+
+PIANI(id AUTOINCREMENT,nomePiano VARCHAR(20)); 
+
+UTENTI(id AUTOINCREMET,nome VARCHAR(20),cognome VARCHAR(20),password TEXT,email VARCHAR(20),livello_permesso int,logged BOOL); pk(id)
+
+// il campo "livello_permesso"  può assumere 3 valori [3=alto,2=medio,1=basso]:
+
+// Il valore alto è assegnato ai comandi che può lanciare solo l'amministratore. (C.R.U.D. e altri)
+// Il valore medio è assegnato ai comandi che possono lanciare utente e amministratore.
+// Il valore basso è assegnato ai comandi che possono lanciare gli oggetti,l'utente e l'amministratore.
+

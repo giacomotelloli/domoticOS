@@ -1,0 +1,33 @@
+-----------------------------------------------------------
+-    DISCUSSIONE DELLA STRUTTURA DELLA RETE CASALINGA     -
+-----------------------------------------------------------
+Schema per adattare HAL ad oggetti proprietari
+
+La rete vedrà il seguente scambio di messaggi:
+
+(H.A.L.)-->(broker)-->(specifico_gestore_oggetto)-->(oggetto)
+
+
+lo "specifio_gestore_oggetti" è quell'agente che convertirà il comando inviato da HAL in un comando comprensibile dal software propietario dell'oggetto.
+
+ lo "specifico_gestore_oggetti" avrà una tabella di conversione: 
+______________________________
+| comando_hal | comando_spec |
+------------------------------
+|_____________|______________|	
+|_____________|______________|
+|_____________|______________|
+
+SE L'OGGETTO NON DOVESSE ESSERE PROPRIETARIO:
+
+Allora la rete vedrà il seguente scambio di messaggi:
+
+(H.A.L.)-->(broker)-->(specifico_gestore_oggetto)-->(oggetto)
+
+(H.A.L.)<--(broker)<--(specifico_gestore_oggetto)<--(oggetto)
+
+l'oggetto invia messaggi informativi utilizzando sempre la sintassi di HAL i quali verranno interpretati come comandi con livello permessi basso. 
+
+Il gestore dell'oggetto è un componente fisico dell'impianto che gestisce le comunicazioni tra HAL ed oggetti dello stesso tipo.
+
+

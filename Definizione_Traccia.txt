@@ -1,0 +1,85 @@
+----------------------------------
+|    Defnizione del caso d'uso   |
+----------------------------------
+
+
+Un'azienda che produce sistemi di domotica vuole introdurre nel mercato un 
+nuovo modello di sistema,gestito parzialmente da un'interfaccia testuale (H.A.L. (Home Assistant Language)) con la quale l'utente può comunicare e dalla quale arrivano tutti i messaggi provenienti dalla rete casalinga.
+Ci sono tre livelli di utente:
+- ALTO 3
+- MEDIO 2
+- BASSO 1
+
+ 
+-(Definizione del database e xml)
+Visto che il sistema deve monitorare l'intera casa o per lo meno  gli oggetti smart,si vuole salvare ogni UTENTE con (nome,cognome,password,email,livello_permesso).
+
+La casa è formata da diversi PIANI (minimo 1) i quali contengono diverse STANZE che contengono n OGGETTI .
+e di ogni oggetto si vuole sapere il nome che deve essere univoco all'interno della stanza ed ogni oggetto possiede un file xml nel quale vengono salvate diverse VARIABILI STATO,un altro file xml dove vengono salvati i comandi eseguibili dall'oggetto con la relativa implementazione,ed un ulteriore file xml dove vengono salvati i comandi impostati come promemoria.
+L'utente quindi digiterà una frase-comando che verrà tradotta in un liguaggio più formale ed adatto ai dispositivi che riceveranno i comandi.
+
+
+
+ es: apri finestra in sala da pranzo ,tradotto in, piano_terra.sala_da_pranzo.finestra:apri
+(la traduzione viene effettuata secondo il protocollo MQTT)
+
+
+-(Definizione struttura rete casalinga)
+
+Dal punto di vista fisico si decide di installare un mainframe nella casa contenente il database e l'algoritmo di codifica del linguaggio,e collegare tale mainframe all'interno della rete casalinga,insieme al broker e ai gestori delle stanze che comunicheranno con il broker all'interno della LAN di casa.
+
+Le comunicazioni tra utente ed oggetti seguiranno il seguente iter:
+
+TERMINALE <--> MAINFRAME <--> BROKER <--> GESTORE STANZA <--> OGGETTO
+
+Il MAINFRAME per parlare con il gestore della stanza che sarebbe un micro controllore all'interno della stanza 
+Ogni livello garantisce un accesso a diversi comandi comunicabili ad H.A.L.
+
+Per tenere traccia dello stato di ogni oggetto presente nella casa ogni oggetto invia un file XML al gestore di stanza che a sua volta invia al mainframe un file XML contentente lo stato di ogni oggetto appartente alla stanza.
+
+Ogni oggetto ha un file XML che contiene i dati legati allo stato di quest'ultimo. 
+
+Gli oggetti in questione sono:
+-Computer fisso (Camera da letto)
+-Serra (Giardino)
+-Frigorifero (Cucina)
+-Macchina (Garage)
+-Macchinetta per il caffè (Cucina)
+
+-----------------------
+|     FUNZIONALITA'   |
+-----------------------
+
+
+Gli utenti di livello BASSO possono:
+
+-Visualizzare lo stato di ogni oggetto 
+-Lanciare il tutorial sull'utilizzo del sistema
+
+Gli utenti di livello MEDIO possono fare tutto quello che può fare un utente di livello BASSO e:
+
+-Inviare comandi agli oggetti.(che variano a seconda dell'oggetto)
+-Visualizzare un help dei comandi.
+-Aggiungere o togliere oggetti nella casa.
+-Impostare promemoria agli oggetti
+
+Gli utenti di livello ALTO possono fare tutto quello che può fare un utente di livello MEDIO e:
+
+-Aggiungere o togliere comandi ad HAL
+-Aggiungere o togliere utenti oppure modificarne il livello
+-Vedere tutti gli utenti nella casa. 
+-Aggiungere o togliere stanze.
+
+------------------------------------------------------------------------------------------------------------
+
+-Tutorial gamificato sull'utilizzo del sistema.
+ Per ogni livello in base alla quantità di comandi presenti nel sistema viene creata una barra di avanzamento che avanza ad ogni comando appreso e ci sono vari goal da raggiungere.
+
+Su tutti gli n comandi presenti nel sistema:
+il primo riconoscimento lo si raggiunge ad n/3 comandi appresi. (Ospite) 
+il secondo riconoscimento lo si raggiunge ad n/2 comandi appresi. (Chiavi in mano)
+il terzo riconoscimento lo si raggiunge ad n comandi appresi. (Padrone di casa)
+
+La fase di apprendimento del comando è strutturata in una descrizione del comando + una prova di quest'ultimo.
+ad ogni comando appreso l'utente verrà premiato con una frase motivazionale.
+
