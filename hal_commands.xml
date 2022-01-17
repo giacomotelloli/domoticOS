@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<comandi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="xml/commands.xsd">
+
+	<comando>
+     <livelloPermesso>3</livelloPermesso>
+		<verboComando>visualizza_utenti</verboComando>
+		<codiceComando>comandi/cod_vis_utenti.php</codiceComando>
+	</comando>
+	
+<comando>
+  <livelloPermesso>4</livelloPermesso>
+  <verboComando>visualizza_utenti_connessi</verboComando>
+  <codiceComando>comandi/cod_vis_utenti_conn.php</codiceComando>
+</comando>
+
+	<comando>
+	   <livelloPermesso>3</livelloPermesso>
+		<verboComando>aiuto</verboComando>
+		<codiceComando>comandi/cod_aiuto.php</codiceComando>
+	</comando>
+	
+	<comando>
+	 <livelloPermesso>4</livelloPermesso>
+		<verboComando>aggiungi_utente</verboComando>
+		<codiceComando>comandi/cod_add_utente.php</codiceComando>
+	</comando>
+
+<comando>
+ <livelloPermesso>4</livelloPermesso>
+<verboComando>rimuovi_utente</verboComando>
+<codiceComando>comandi/cod_del_utente.php</codiceComando>
+</comando>
+
+<comando>
+  <livelloPermesso>4</livelloPermesso>
+  <verboComando>modifica_livello_utente</verboComando>
+  <codiceComando>comandi/cod_mod_liv_utente.php</codiceComando>
+</comando>
+
+<comando>
+ <livelloPermesso>3</livelloPermesso>
+<verboComando>modifica_livello_comando</verboComando>
+<codiceComando>comandi/cod_mod_perm_comando.php</codiceComando>
+</comando>
+
+<comando>
+  <livelloPermesso>3</livelloPermesso>
+  <verboComando>aggiungi_luogo</verboComando>
+  <codiceComando>comandi/cod_add_luogo.php</codiceComando>
+</comando>
+
+
+<comando>
+  <livelloPermesso>3</livelloPermesso>
+  <verboComando>aggiungi_piano</verboComando>
+  <codiceComando>comandi/cod_add_piano.php</codiceComando>
+</comando>
+
+
+<comando>
+  <livelloPermesso>3</livelloPermesso>
+  <verboComando>aggiungi_oggetto</verboComando>
+  <codiceComando>comandi/cod_add_ogg.php</codiceComando>
+</comando>
+
+
+<comando>
+  <livelloPermesso>3</livelloPermesso>
+  <verboComando>rimuovi_piano</verboComando>
+  <codiceComando>comandi/cod_del_piano.php</codiceComando>
+</comando>
+
+
+<comando>
+  <livelloPermesso>3</livelloPermesso>
+  <verboComando>rimuovi_luogo</verboComando>
+  <codiceComando>comandi/cod_del_luogo.php</codiceComando>
+</comando>
+
+<comando>
+  <livelloPermesso>3</livelloPermesso>
+  <verboComando>rimuovi_oggetto</verboComando>
+  <codiceComando>comandi/cod_del_ogg.php</codiceComando>
+</comando>
+
+<comando>
+<livelloPermesso>3</livelloPermesso>
+<verboComando>visualizza_oggetti</verboComando>
+<codiceComando>comandi/cod_vis_ogg.php</codiceComando>
+</comando>
+
+</comandi>
